@@ -7,9 +7,12 @@ const script = document.createElement('script');
 script.src = 'https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.2.0/socket.io.js';
 document.head.appendChild(script);
 
-const socket = io('https://capital-server-9ebj.onrender.com/', {
-    query: { secret: 'aurify@123' }, // Pass secret key as query parameter
+const socket = io('https://capitalapi.aurify.ae/', {
+    query: { secret: 'aurify@123' }, // Pass secret key as query parameter 
 });
+
+// https://capital-server-9ebj.onrender.com/
+// https://capitalapi.aurify.ae/
 
 const firestore = getFirestore(app)
 
